@@ -431,7 +431,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right;
+  background: white;
   background-size: cover;
 }
 
@@ -464,7 +464,7 @@ h6 {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 40px;
@@ -473,6 +473,106 @@ h6 {
   margin-top: 30px;
   color: #fff;
   background: #34b7a7;
+  display: flex;
+  justify-content: center;
+}
+#chooseFile {
+  visibility: hidden;
+}
+
+.container_img {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.image-upload {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 170px;
+  left: 20px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#chooseFile {
+  visibility: hidden;
+}
+
+.fileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fileInput {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 2px black;
+  width: 60%;
+  height: 30px;
+}
+
+#fileName {
+  margin-left: 5px;
+}
+
+input[type=submit] {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 0.8em;
+
+  cursor: pointer;
+}
+
+.image-show {
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  top: 120px;
+  left: 40px;
+
+}
+
+.img {
+  text-align: center;
+}
+
+
+#waiting {
+  display: none;
+
+}
+
+#my-input {
+  /*visibility: hidden;*/
+}
+
+#hero .button{
+  display: flex;
+  justify-content: center;
 }
 
 #hero .btn-about:hover {
